@@ -24,7 +24,7 @@ body{
     font-size: 1.6rem;
     background: linear-gradient(to bottom right, #5b1c7c, #870dbe, #c488e4 );
     line-height: 1.5;
-    zoom:50%;
+    zoom:100%;
 }
 img{
     width: 100%;
