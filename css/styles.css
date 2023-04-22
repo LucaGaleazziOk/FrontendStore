@@ -4,6 +4,7 @@
     --secondary: #870dbe;
     --primary: #5b1c7c;
     --textYellow: #ffce00;
+    --hardYellow: #ffbb00;
     --textWhite: #f7ecfa;
     --border: .3rem solid #5b1c7c;
 }
@@ -24,17 +25,17 @@ body{
     font-size: 1.6rem;
     background: linear-gradient(to bottom right, #5b1c7c, #870dbe, #c488e4 );
     line-height: 1.5;
-    zoom:100%;
+    zoom: 100%;
 }
 img{
-    width: 100%;
+    max-width: 100%;
 }
 p{
     font-size: 1.8rem;
 }
 .container{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 10rem;
 }
 h1, h2, h3{
     text-align: center;
@@ -136,7 +137,7 @@ h3{
 }
 @media (max-width: 768px){
     .graph__node{
-        grid-row: 8 / 9;
+        grid-row: 7 / 8;
         grid-column: 1 / 3;
         background-image: url(../img/grafico2.jpg);
         background-size: cover;
@@ -212,6 +213,79 @@ h3{
     .box__p{
         padding: 0 1rem;
     }
+}
+/*Producto*/
+.buying__html{
+    min-height: 100%;
+    position: relative;
+}
+.buying__main{
+    min-height: calc(max-content + 10rem);
+}
+.footer__buying{
+    position: absolute;
+    bottom: 0;
+}
+.buying{
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+}
+@media (max-width: 768px){
+    .buying{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buying__img{
+        width: 70%;
+        text-align: center;
+    }
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+@media (max-width: 768px){
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+    .form__camp,.form__submit{
+        width: 100%;
+    }
+}
+.form__camp{
+    border: .3rem solid var(--primary);
+    background-color: var(--secondary);
+    color: var(--textWhite);
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+}
+.form__camp option{
+    color: var(--textWhite);
+    text-align: center;
+}
+.form__camp::placeholder{
+    color: var(--textWhite);
+}
+.form__submit{
+    background-color: var(--textYellow);
+    border: none;
+    grid-column: 1 / 3;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+.form__submit:hover{
+    background-color: var(--hardYellow);
 }
 /*Footer*/
 .footer{

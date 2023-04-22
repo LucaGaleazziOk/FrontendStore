@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="buying__html" lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,18 +15,39 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Front-end Store</title>
 </head>
-<body>
-    <header class="header container>
-        <a href="index.html"><img class="header__logo" src="img/logo.png" alt=""></a>
+<body class="buying__body">
+    <header class="header">
+        <a href="https://frontstore-lucagaleazzi.netlify.app/"><img class="header__logo" src="img/logo.png" alt=""></a>
     </header>
     <nav class="nav">
-        <a href="index.html" class="nav__item">Tienda</a>
-        <a href="nosotros.html" class="nav__item">Nosotros</a>
+        <a href="https://frontstore-lucagaleazzi.netlify.app/" class="nav__item">Tienda</a>
+        <a href="https://frontstore-lucagaleazzi.netlify.app/nosotros.html" class="nav__item">Nosotros</a>
     </nav>
-    <main class="container">
-        <h1>Estamos trabajando, vuelva pronto</h1>
+    <main class="container buying__main">
+        <h1>React Js</h1>
+        
+        <div class="buying">
+            <img src="img/3.jpg" alt="" class="buying__img">
+            <div class="buying__content">
+                <p>Esta web está creada exclusivamente con fines ilustrativos, es por ello que solo este ítem estará disponible para la vista de compra. Así como tampoco será posible visualizar el carrito.
+                </p>
+
+                <form class="form">
+                    <select class="form__camp">
+                        <option disabled selected>-- Seleccionar talle --</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <input type="number" class="form__camp" placeholder="cantidad" min="1">
+                    <input type="submit" class="form__submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
+    <footer class="footer footer__buying">
         <p class="footer__text">Copyright 2023 - Luca Galeazzi</p>
     </footer>
 </body>
